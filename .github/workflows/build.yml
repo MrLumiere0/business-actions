@@ -1,8 +1,8 @@
 name: Test and Deploy
 
 on:
-push:
-    branches: [ main ]
+    push:
+        branches: [ main ]
 
 
 jobs: 
@@ -23,14 +23,14 @@ steps:
 
 
 on:
-pull:
-    branches: [ main ]
+    pull:
+        branches: [ main ]
 
 
 jobs:
-test:
-    name: Test
-    runs-on: ubuntu-latest
+    test:
+        name: Test
+        runs-on: ubuntu-latest
 
 steps:
     - uses: actions/checkout@v3
